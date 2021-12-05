@@ -9,7 +9,7 @@
                         X
                     </div>
                     <div class="flex justify-center items-center h-full">
-                        <img src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="max-h-full object-scale-down">
+                        <img alt="frontpage_img" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="pt-12 object-scale-down">
                     </div>
                 </div>
             </div>
