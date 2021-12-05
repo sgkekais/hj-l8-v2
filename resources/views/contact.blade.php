@@ -9,6 +9,8 @@
         40589 Düsseldorf<br>
         <br>
         Send inquiries to: <span class="font-bold">info</span> at <span class="font-bold">harryjeon dot com</span>
+        <br>
+        or use the contact form below to leave me a message :)
     </div>
 
     @livewire('contact')
