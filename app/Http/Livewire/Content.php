@@ -15,9 +15,9 @@ class Content extends Component
     {
         $this->work = $work;
         $this->pictures = json_decode($work->work_images, true);
-        if (!empty($this->pictures)) {
+        /*if (!empty($this->pictures)) {
             (sort($this->pictures));
-        }
+        }*/
         $this->videos = explode(',', $work->work_video);
     }
 
