@@ -3,13 +3,13 @@
 
         <div class="flex w-full justify-center h-5/6">
             <div x-data="{open: false}">
-                <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="cursor-pointer">
+                <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="cursor-pointer pt-12 object-scale-down">
                 <div x-show.transition.opacity="open" x-on:click="open = false" class="p-12 w-full h-100 fixed flex justify-center items-center inset-0 bg-white bg-opacity-90 z-50">
                     <div x-on:click="open = false" class="cursor-pointer absolute top-12 right-12 text-3xl text-gray-500">
                         X
                     </div>
                     <div class="flex justify-center items-center h-full">
-                        <img alt="frontpage_img" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="pt-12 object-scale-down">
+                        <img alt="frontpage_img" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" class="max-h-full object-scale-down">
                     </div>
                 </div>
             </div>
