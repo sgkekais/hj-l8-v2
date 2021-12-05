@@ -1,4 +1,4 @@
-<div class="">
+<div class="px-8 lg:px-0 pb-8 lg:pt-24">
     <div class="text-xl font-serif">
         {{ $work->title_long }}
     </div>
@@ -27,7 +27,7 @@
         </div>
 
     @elseif( $work->work_type == "images")
-        <div class="pt-8 grid gap-8 md:gap-12 grid-cols-1 lg:grid-cols-2">
+        <div class="pt-8 grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-2">
             @foreach ( $pictures ?: [] as $picture )
                 <div x-data="{open: false}">
                     <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$picture) }}" class="cursor-pointer">

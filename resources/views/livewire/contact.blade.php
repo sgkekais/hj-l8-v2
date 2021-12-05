@@ -1,8 +1,8 @@
-<div>
+<div class="px-8 lg:px-0 py-8">
     <form wire:submit.prevent="contactFormSubmit" class="w-full max-w-lg" method="POST">
         @csrf
         <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-3/4 px-3">
+            <div class="w-full lg:w-3/4 px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                     Name
                 </label>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-3/4 px-3">
+            <div class="w-full lg:w-3/4 px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                     E-mail
                 </label>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <x-honey />
-        <div class="md:flex md:items-center">
+        <div class="lg:flex lg:items-center">
             <div class="">
                 <button class="flex items-center shadow bg-indigo-700 hover:bg-indigo-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
                     <span wire:loading>

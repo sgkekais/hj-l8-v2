@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="text-gray-700 space-y-4 text-sm">
+    <div class="px-8 lg:px-0 lg:pt-24 text-gray-700 space-y-4 text-sm">
         <div>Born in Seoul, South Korea</div>
         <div>Based in Düsseldorf, Germany</div>
         <h3 class="font-bold">Education</h3>

@@ -52,18 +52,15 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-white flex flex-col md:flex-row p-8 md:p-12">
-            <div class="w-full md:w-64">
+        <div class="min-h-screen bg-white flex flex-col lg:flex-row">
+            <nav class="p-8 lg:p-12 w-full lg:w-64">
                 @livewire('navigation')
-            </div>
+            </nav>
 
-            <div class="flex-1 pt-8 md:pt-0">
+            <main class="flex-1">
                 <!-- Page Content -->
-                <main class="w-full">
-                    {{ $slot }}
-                </main>
-            </div>
-
+                {{ $slot }}
+            </main>
         </div>
 
         @stack('modals')

@@ -1,9 +1,9 @@
-<div class="text-center md:text-left">
+<div class="text-center lg:text-left">
     <div class="flex flex-col">
         <a href="{{ route('home') }}" class="text-xl hover:underline">HARRY JEON</a>
         <div class="text-lg font-mono tracking-tighter">전 해리</div>
     </div>
-    <div class="py-1 md:py-2 text-gray-500">
+    <div class="py-1 lg:py-2 text-gray-500">
         &middot;
     </div>
     <div x-data="{ open: false }" class="">
@@ -33,10 +33,10 @@
             </li>
         </ul>
     </div>
-    <div class="py-1 md:py-2 text-gray-500">
+    <div class="py-1 lg:py-2 text-gray-500">
         &middot;
     </div>
-    <div class="text-xs md:text-sm text-gray-500">
+    <div class="text-xs lg:text-sm text-gray-500">
         Harry Jeon &copy; {{ date('Y') }}
     </div>
 </div>

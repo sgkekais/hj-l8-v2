@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <div class="pb-4 md:pb-8">
+    <div class="px-8 lg:px-0 lg:pt-24">
         Harry Jeon<br>
         전해리<br>
         <br>
