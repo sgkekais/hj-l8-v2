@@ -2,7 +2,7 @@
     @isset($frontpage_work)
 
         <div class="flex w-full justify-center h-5/6">
-            <img alt="frontpage_img" class="object-scale-down" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" />
+            <img alt="frontpage_img" class="pt-12 object-scale-down" src="{{ asset('storage/'.$frontpage_work->cover_image) }}" />
         </div>
         <div class="p-8 lg:p-12 flex flex-col lg:flex-row justify-end lg:items-center lg:space-x-2 text-right">
             <span>{{ $frontpage_work->title_short }}</span>
