@@ -10,7 +10,7 @@
                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700"
                     id="grid-first-name"
                     type="text"
-                    placeholder="name"
+                    placeholder="Name"
                     value="{{ old('name') }}">
                 @error('name')
                     <p class="text-red-500 text-xs">{{ $message }}</p>
@@ -40,7 +40,7 @@
                 </label>
                 <textarea wire:model.defer="comment" class=" no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700 h-48 resize-none"
                     id="message"
-                    placeholder="your message here..."
+                    placeholder="Your message here..."
                 >
                     {{ old('comment') }}
                 </textarea>
