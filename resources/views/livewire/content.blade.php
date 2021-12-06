@@ -1,4 +1,4 @@
-<div class="px-8 lg:px-0 pb-8 lg:pt-12">
+<div class="px-8 lg:pl-0 lg:pr-8 pb-8 lg:pt-12">
     <div class="text-xl font-serif">
         {{ $work->title_long }}
     </div>
