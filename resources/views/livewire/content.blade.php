@@ -13,7 +13,7 @@
 
     @if($work->cover_image)
         <div class="pt-8">
-            <img src="{{ asset('storage/'.$work->cover_image) }}" />
+            <img class="w-4/5" src="{{ asset('storage/'.$work->cover_image) }}" />
         </div>
     @endif
 
