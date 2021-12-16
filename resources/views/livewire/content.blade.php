@@ -1,9 +1,9 @@
 <div class="px-8 lg:pl-0 lg:pr-8 pb-8 lg:pt-12">
     <div class="text-xl font-serif">
-        {{ $work->title_long }}
+        {{ $work->title_long }}, {{ $work->year }}
     </div>
     <div class="pt-2 text-gray-700">
-        {{ $work->materials_used }}, {{ $work->year }}
+        {{ $work->materials_used }} {{ $work->measurements ? ", ".$work->measurements : null }}
     </div>
     @if($work->description)
         <div class="pt-4 text-sm text-gray-600">

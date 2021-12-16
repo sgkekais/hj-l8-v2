@@ -7,7 +7,7 @@
         <div class="p-8 lg:p-12 flex flex-col lg:flex-row justify-end lg:items-center lg:space-x-2 text-right">
             <span>{{ $frontpage_work->title_short }}</span>
             <small class="text-gray-700">
-                {{ $frontpage_work->materials_used }}, {{ $frontpage_work->year }}
+                {{ $frontpage_work->year }}
             </small>
         </div>
 
