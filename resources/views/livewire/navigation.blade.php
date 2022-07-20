@@ -1,6 +1,6 @@
 <div class="text-center lg:text-left">
     <div class="flex flex-col">
-        <a href="{{ route('home') }}" class="text-xl hover:underline">HARRY JEON</a>
+        <a href="{{ route('home') }}" class="font-semibold hover:underline">Harry Jeon</a>
         <div class="text-lg font-mono tracking-tighter">전 해리</div>
     </div>
     <div class="py-1 lg:py-2 text-gray-500">
