@@ -14,11 +14,13 @@ class Contact extends Component
     public $name;
     public $email;
     public $comment;
+    public $privacy_check;
 
     protected $rules = [
         'name' => 'required',
         'email' => 'required|email',
         'comment' => 'required|min:5',
+        'privacy_check' => 'required'
     ];
 
     public function contactFormSubmit()

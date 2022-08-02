@@ -49,6 +49,17 @@
                 @enderror
             </div>
         </div>
+        <div class="flex mb-6 items-center">
+            <input wire:model.defer="privacy_check" id="privacy_check" type="checkbox"
+                   class="bg-gray-100 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-purple-700 checked:bg-purple-700 checked:border-transparent ">
+            <div class="pl-4 text-sm">
+                @error('privacy_check')
+                <p class="text-red-500 text-xs">{{ $message }}</p>
+                @enderror
+                Mit dem Absenden des Kontaktformulars erklären Sie sich damit einverstanden, dass Ihre Daten zur Bearbeitung Ihres Anliegens verwendet werden.
+            </div>
+        </div>
+
         <x-honey />
         <div class="lg:flex lg:items-center">
             <div class="">
