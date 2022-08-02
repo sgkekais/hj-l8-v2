@@ -19,6 +19,7 @@ Route::get('/works/{work}', \App\Http\Livewire\Content::class)->name('work');
 
 Route::view('/vita', 'vita')->name('vita');
 Route::view('/contact', 'contact')->name('contact');
+Route::view('/privacy', 'privacy')->name('privacy');
 
 // Admin
 Route::group(['prefix' => 'admin'], function () {

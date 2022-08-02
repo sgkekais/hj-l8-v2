@@ -39,5 +39,8 @@
     <div class="text-xs lg:text-sm text-gray-500">
         Harry Jeon &copy; {{ date('Y') }}
     </div>
+    <div class="text-xs text-gray-400">
+        <a href="{{ route('privacy') }}" class="hover:underline">Datenschutz</a>
+    </div>
 </div>
 
