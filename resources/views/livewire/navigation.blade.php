@@ -40,7 +40,7 @@
         Harry Jeon &copy; {{ date('Y') }}
     </div>
     <div class="text-xs text-gray-400">
-        <a href="{{ route('privacy') }}" class="hover:underline">Datenschutz</a>
+        <a href="{{ route('privacy') }}" class="hover:underline">Privacy</a>
     </div>
 </div>
 
