@@ -56,7 +56,7 @@
                 @error('privacy_check')
                 <p class="text-red-500 text-xs">{{ $message }}</p>
                 @enderror
-                Mit dem Absenden des Kontaktformulars erklären Sie sich damit einverstanden, dass Ihre Daten zur Bearbeitung Ihres Anliegens verwendet werden.
+                By sending the contact form you agree that your data will be used to process your request.
             </div>
         </div>
 
