@@ -21,11 +21,12 @@
         <meta property="twitter:title" content="Harry Jeon - artist">
         <meta property="twitter:description" content="Portfolio of South Korean artist Harry Jeon - art, media, photography, installations and objects">
 
+        {{--
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto+Slab:wght@500&family=Karla:wght@400;600&display=swap" rel="stylesheet">
-
+        --}}
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
