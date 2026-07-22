@@ -29,7 +29,7 @@
     @elseif($work->work_type == "images")
         @if($work->work_images0)
             @if($work->work_images0_desc)
-                <div class="pt-4 text-sm text-gray-600">
+                <div class="pt-4 text-gray-700">
                     {{ $work->work_images0_desc }}
                 </div>
             @endif
@@ -51,7 +51,7 @@
         @endif
         @if($work->work_images)
             @if($work->work_images_desc)
-                <div class="pt-4 text-sm text-gray-600">
+                <div class="pt-4 text-gray-700">
                     {{ $work->work_images_desc }}
                 </div>
             @endif
