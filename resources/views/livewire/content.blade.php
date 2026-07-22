@@ -28,6 +28,11 @@
 
     @elseif($work->work_type == "images")
         @if($work->work_images0)
+            @if($work->work_images0_desc)
+                <div class="pt-4 text-sm text-gray-600">
+                    {{ $work->work_images0_desc }}
+                </div>
+            @endif
             <div class="pt-8 grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-2">
                 @foreach ( $pictures ?: [] as $picture )
                     <div x-data="{open: false}">
@@ -45,6 +50,11 @@
             </div>
         @endif
         @if($work->work_images)
+            @if($work->work_images_desc)
+                <div class="pt-4 text-sm text-gray-600">
+                    {{ $work->work_images_desc }}
+                </div>
+            @endif
             <div class="pt-8 grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-2">
                 @foreach ( $pictures ?: [] as $picture )
                     <div x-data="{open: false}">
