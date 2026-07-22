@@ -8,7 +8,9 @@ use Livewire\Component;
 class Content extends Component
 {
     public Work $work;
-    public $pictures;
+    public $work_images0;
+    public $work_images;
+    public $wip_pictures;
     public $videos;
 
     public function mount(Work $work)
