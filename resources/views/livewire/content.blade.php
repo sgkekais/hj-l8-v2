@@ -34,15 +34,15 @@
                 </div>
             @endif
             <div class="pt-8 grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-2">
-                @foreach ( $pictures ?: [] as $picture )
+                @foreach ( $work_images0 ?: [] as $work_image0 )
                     <div x-data="{open: false}">
-                        <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$picture) }}" class="cursor-pointer">
+                        <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$work_image0) }}" class="cursor-pointer">
                         <div x-show.transition.opacity="open" x-on:click="open = false" class="p-12 w-full h-100 fixed flex justify-center items-center inset-0 bg-white bg-opacity-90 z-50">
                             <div x-on:click="open = false" class="cursor-pointer absolute top-12 right-12 text-3xl text-gray-500">
                                 X
                             </div>
                             <div class="flex justify-center items-center h-full">
-                                <img src="{{ asset('storage/'.$picture) }}" class="max-h-full object-scale-down">
+                                <img src="{{ asset('storage/'.$work_image0) }}" class="max-h-full object-scale-down">
                             </div>
                         </div>
                     </div>
@@ -56,15 +56,15 @@
                 </div>
             @endif
             <div class="pt-8 grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-2">
-                @foreach ( $pictures ?: [] as $picture )
+                @foreach ( $work_images ?: [] as $work_image )
                     <div x-data="{open: false}">
-                        <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$picture) }}" class="cursor-pointer">
+                        <img x-on:click.prevent="open = true" src="{{ asset('storage/'.$work_image) }}" class="cursor-pointer">
                         <div x-show.transition.opacity="open" x-on:click="open = false" class="p-12 w-full h-100 fixed flex justify-center items-center inset-0 bg-white bg-opacity-90 z-50">
                             <div x-on:click="open = false" class="cursor-pointer absolute top-12 right-12 text-3xl text-gray-500">
                                 X
                             </div>
                             <div class="flex justify-center items-center h-full">
-                                <img src="{{ asset('storage/'.$picture) }}" class="max-h-full object-scale-down">
+                                <img src="{{ asset('storage/'.$work_image) }}" class="max-h-full object-scale-down">
                             </div>
                         </div>
                     </div>

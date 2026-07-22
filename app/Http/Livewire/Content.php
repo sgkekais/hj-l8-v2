@@ -14,7 +14,8 @@ class Content extends Component
     public function mount(Work $work)
     {
         $this->work = $work;
-        $this->pictures = json_decode($work->work_images, true);
+        $this->work_images0 = json_decode($work->work_images0, true);
+        $this->work_images = json_decode($work->work_images, true);
         $this->wip_pictures = json_decode($work->wip_images, true);
         /*if (!empty($this->pictures)) {
             (sort($this->pictures));
