@@ -24,7 +24,7 @@ class Work extends Model
         'work_images0',
         'work_images',
         'work_images0_desc',
-        'work_images_desc'
+        'work_images_desc',
         'work_video'
     ];
 
