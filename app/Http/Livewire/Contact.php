@@ -25,6 +25,10 @@ class Contact extends Component
 
     public function contactFormSubmit()
     {
+        if (! $this->honeyPasses()) {
+            return;
+        }
+
         $this->validate();
 
         Mail::send('email',
