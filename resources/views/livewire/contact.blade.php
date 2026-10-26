@@ -1,12 +1,12 @@
 <div class="px-8 lg:px-0 py-8">
-    <form wire:submit.prevent="contactFormSubmit" class="w-full max-w-lg" method="POST">
+    <form wire:submit="contactFormSubmit" class="w-full max-w-lg" method="POST">
         @csrf
         <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full lg:w-3/4 px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                     Name
                 </label>
-                <input wire:model.defer="name"
+                <input wire:model="name"
                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700"
                     id="grid-first-name"
                     type="text"
@@ -22,7 +22,7 @@
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                     E-mail
                 </label>
-                <input wire:model.defer="email"
+                <input wire:model="email"
                     class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700"
                     id="email"
                     type="email"
@@ -38,7 +38,7 @@
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                     Message
                 </label>
-                <textarea wire:model.defer="comment" class=" no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700 h-48 resize-none"
+                <textarea wire:model="comment" class=" no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-purple-700 h-48 resize-none"
                     id="message"
                     placeholder="Your message here..."
                 >
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="flex mb-6 items-center">
-            <input wire:model.defer="privacy_check" id="privacy_check" type="checkbox"
+            <input wire:model="privacy_check" id="privacy_check" type="checkbox"
                    class="bg-gray-100 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-purple-700 checked:bg-purple-700 checked:border-transparent ">
             <div class="pl-4 text-sm">
                 @error('privacy_check')
